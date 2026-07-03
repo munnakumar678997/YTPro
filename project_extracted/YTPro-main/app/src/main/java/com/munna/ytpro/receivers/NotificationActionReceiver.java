@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro.receivers;
+package com.munna.ytpro.receivers;
 
 
 import android.content.BroadcastReceiver;

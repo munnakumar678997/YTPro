@@ -1,11 +1,11 @@
-package com.google.android.youtube.pro.receivers;
+package com.munna.ytpro.receivers;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.google.android.youtube.pro.webview.YTProWebView;
+import com.munna.ytpro.webview.YTProWebView;
 
 public class MediaCommandReceiver extends BroadcastReceiver {
     private final YTProWebView web;

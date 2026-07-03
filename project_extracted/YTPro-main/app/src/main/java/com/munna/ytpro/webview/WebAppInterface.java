@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro.webview;
+package com.munna.ytpro.webview;
 
 import android.app.PictureInPictureParams;
 import android.content.Context;
@@ -20,12 +20,12 @@ import android.os.Build;
 import android.os.Environment;
 import androidx.webkit.WebViewFeature;
 
-import com.google.android.youtube.pro.ForegroundService;
-import com.google.android.youtube.pro.GeminiWrapper;
-import com.google.android.youtube.pro.MainActivity;
-import com.google.android.youtube.pro.R;
-import com.google.android.youtube.pro.utils.DownloadUtils;
-import com.google.android.youtube.pro.utils.MediaMuxerUtils;
+import com.munna.ytpro.ForegroundService;
+import com.munna.ytpro.GeminiWrapper;
+import com.munna.ytpro.MainActivity;
+import com.munna.ytpro.R;
+import com.munna.ytpro.utils.DownloadUtils;
+import com.munna.ytpro.utils.MediaMuxerUtils;
 
 import org.json.JSONObject;
 

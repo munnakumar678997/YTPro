@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro;
+package com.munna.ytpro;
 
 import android.os.Bundle;
 

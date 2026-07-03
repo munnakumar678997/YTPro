@@ -13,48 +13,42 @@
 
 ## Download YT PRO
 
-[![Download APK](https://img.shields.io/badge/⬇%20DOWNLOAD-APK-red?style=for-the-badge)](https://github.com/munnakumar678997/YTPro/releases/latest/download/youtube_pro_signed.apk)
+<a href="https://github.com/munnakumar678997/YTPro/releases/latest/download/youtube_pro_signed.apk">
+  <img src="https://img.shields.io/badge/⬇_DOWNLOAD_APK-Install_Now-red?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="50">
+</a>
 
-> **Note:** Download APK → Open file → Install. Allow "Install from unknown sources" if asked.
+> **Note:** APK download hone ke baad open karein → Install karein. "Install from unknown sources" allow karein agar phone pooche.
 
-#### Screenshots
+---
+
+## Screenshots
+
 | | | |
-|:--:|:--:|:--|
+|:--:|:--:|:--:|
 |<img src='https://raw.githubusercontent.com/prateek-chaubey/YTPro/main/.github/img/screen3.jpg'>|<img src='https://raw.githubusercontent.com/prateek-chaubey/YTPro/main/.github/img/screen2.jpg'>|<img src='https://raw.githubusercontent.com/prateek-chaubey/YTPro/main/.github/img/screen5.jpg'>|
 |<img src='https://raw.githubusercontent.com/prateek-chaubey/YTPro/main/.github/img/screen6.jpg'>|<img src='https://raw.githubusercontent.com/prateek-chaubey/YTPro/main/.github/img/screen4.jpg'>|<img src='https://raw.githubusercontent.com/prateek-chaubey/YTPro/main/.github/img/screen1.jpg'>|
 
 ## Features
- * 🤖 Google Gemini AI
-   * Summarise Videos
-   * Customisable prompts and models
- * 📥 Video Downloader
- * 📥 Shorts Downloader
- * 🔀 In-built Video and Audio Muxer
- * 🖼️ Thumbnails Downloader
- * 📝 Captions Downloader
+ * 🤖 Google Gemini AI — Summarise Videos, Customisable prompts & models
+ * 📥 Video & Shorts Downloader
+ * 🔀 In-built Video + Audio Muxer
+ * 🖼️ Thumbnails & Captions Downloader
  * 🚫 Ads Blocker
- * 🔻 Minimize Video
  * 📺 Picture in Picture Mode
- * 👆 Gesture control for Volume and Brightness
+ * 👆 Gesture controls for Volume & Brightness
  * 👎 Shows Number of Dislikes
  * 🎵 Background Audio Player
- * ❤️ Custom Heart feature to save videos without logging into your account
- * ⚙️ Enable / disable media codecs
- * ⏭️ Skip Sponsors
- * 🔍 Force Zoom
+ * ❤️ Save videos without logging in (Heart feature)
+ * ⏭️ Skip Sponsors (SponsorBlock)
+ * ⚡ Up to 10x video speed
  * 🙈 Hide Shorts
- * ⚡ Upto 10x video speed
  * 📦 Minimal APK size
  * 🎨 Adaptive UI icons
 
 ## Gemini Prompt Variables
-* `{url}` — The URL of the video
+* `{url}` — URL of the video
 * `{title}` — Title of the video
-* `{videoId}` — Video Id of the video
-
-## ToDo
- * Enhance Audio
- * Skip Silence
+* `{videoId}` — Video ID
 
 ### Credits
  * [SponsorBlock](https://github.com/ajayyy/SponsorBlock)
@@ -62,4 +56,4 @@
  * [YouTube.js](https://github.com/LuanRT/YouTube.js/)
 
 ## Disclaimer
-This is an educational project aimed at showcasing javascript injection into a webview to enhance productivity.
+This is an educational project aimed at showcasing JavaScript injection into a webview to enhance productivity.

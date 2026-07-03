@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro;
+package com.munna.ytpro;
 
 import android.app.Activity;
 import android.app.PictureInPictureParams;
@@ -21,13 +21,13 @@ import android.window.OnBackInvokedDispatcher;
 import android.widget.Button;
 
 // Import the separated components
-import com.google.android.youtube.pro.webview.YTProWebView;
-import com.google.android.youtube.pro.webview.YTProWebViewClient;
-import com.google.android.youtube.pro.webview.YTProWebChromeClient;
-import com.google.android.youtube.pro.webview.WebAppInterface;
-import com.google.android.youtube.pro.webview.BinaryStreamManager;
+import com.munna.ytpro.webview.YTProWebView;
+import com.munna.ytpro.webview.YTProWebViewClient;
+import com.munna.ytpro.webview.YTProWebChromeClient;
+import com.munna.ytpro.webview.WebAppInterface;
+import com.munna.ytpro.webview.BinaryStreamManager;
 
-import com.google.android.youtube.pro.receivers.MediaCommandReceiver;
+import com.munna.ytpro.receivers.MediaCommandReceiver;
 
 public class MainActivity extends Activity {
 

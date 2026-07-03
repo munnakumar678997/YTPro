@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro.webview;
+package com.munna.ytpro.webview;
 
 import android.content.Intent;
 import android.webkit.WebResourceRequest;
@@ -6,8 +6,8 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.google.android.youtube.pro.ForegroundService;
-import com.google.android.youtube.pro.MainActivity;
+import com.munna.ytpro.ForegroundService;
+import com.munna.ytpro.MainActivity;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro.utils;
+package com.munna.ytpro.utils;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;

@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro.utils;
+package com.munna.ytpro.utils;
 
 import android.Manifest;
 import android.app.Activity;
@@ -10,7 +10,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.widget.Toast;
 
-import com.google.android.youtube.pro.R;
+import com.munna.ytpro.R;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro.webview;
+package com.munna.ytpro.webview;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -12,8 +12,8 @@ import android.webkit.WebChromeClient;
 import android.widget.FrameLayout;
 
 // Import the main files from the parent package
-import com.google.android.youtube.pro.MainActivity;
-import com.google.android.youtube.pro.R;
+import com.munna.ytpro.MainActivity;
+import com.munna.ytpro.R;
 
 public class YTProWebChromeClient extends WebChromeClient {
     private final MainActivity activity;

@@ -1,4 +1,4 @@
-package com.google.android.youtube.pro;
+package com.munna.ytpro;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -19,7 +19,7 @@ import android.os.IBinder;
 import android.util.Base64;
 import android.util.Log;
 
-import com.google.android.youtube.pro.receivers.NotificationActionReceiver;
+import com.munna.ytpro.receivers.NotificationActionReceiver;
 
 public class ForegroundService extends Service {
 
