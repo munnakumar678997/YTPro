@@ -26,40 +26,27 @@ jobs:
       run: cmd.exe /c gradlew.bat assembleRelease
 
     - name: Sign
-      run: cmd.exe /c java.exe -jar "signer\ApkSigner.jar" sign --key "signer\apkeasytool.pk8" --cert "signer\apkeasytool.pem" --v4-signing-enabled false --out "%cd%/app/build/outputs/apk/release/youtube_pro_signed.apk" "%cd%/app/build/outputs/apk/release/app-release-unsigned.apk"
+      run: cmd.exe /c java.exe -jar "signer\ApkSigner.jar" sign --key "signer\apkeasytool.pk8" --cert "signer\apkeasytool.pem" --v4-signing-enabled false --out "%cd%/app/build/outputs/apk/release/YTPro.apk" "%cd%/app/build/outputs/apk/release/app-release-unsigned.apk"
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
       with:
         name: YTPRO
-        path: app/build/outputs/apk/release/youtube_pro_signed.apk
+        path: app/build/outputs/apk/release/YTPro.apk
+
+    - name: Delete old release
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      run: gh release delete latest --yes --cleanup-tag
+      continue-on-error: true
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create Release
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      uses: softprops/action-gh-release@v2
-      with:
-        tag_name: latest
-        name: YT PRO Latest Build
-        body: |
-          ## YT PRO — Latest Build
-
-          ### Install
-          Download the APK below and install it on your Android phone.
-
-          ### Features
-          - Ads Blocker
-          - Video & Shorts Downloader
-          - Background Audio Player
-          - Picture in Picture Mode
-          - Google Gemini AI Summary
-          - Gesture Controls (Volume & Brightness)
-          - Return YouTube Dislike
-          - Skip Sponsors (SponsorBlock)
-          - 10x Speed Control
-          - Hide Shorts
-          - And much more!
-        files: app/build/outputs/apk/release/youtube_pro_signed.apk
-        make_latest: true
-        prerelease: false
+      run: |
+        gh release create latest "app/build/outputs/apk/release/YTPro.apk" ^
+          --title "YT PRO - Latest Build" ^
+          --notes "## YT PRO - Latest Build##Install##Download the APK file and open it on your Android phone to install." ^
+          --latest
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

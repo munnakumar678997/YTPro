@@ -1,23 +1,24 @@
 
 <p align="center">
-<img src='https://raw.githubusercontent.com/munnakumar678997/YTPro/main/images/YT PRO.jpg' height=150>
+<img src='https://raw.githubusercontent.com/munnakumar678997/MunnaYTPro/main/images/YT PRO.jpg' height=150>
 </p>
 
 <h1 align="center">YT PRO</h1>
 
 <div align="center">
 
-[![Gradle](https://github.com/munnakumar678997/YTPro/actions/workflows/gradle.yml/badge.svg)](https://github.com/munnakumar678997/YTPro/actions/workflows/gradle.yml)
+[![Gradle](https://github.com/munnakumar678997/MunnaYTPro/actions/workflows/gradle.yml/badge.svg)](https://github.com/munnakumar678997/MunnaYTPro/actions/workflows/gradle.yml)
 
 </div>
 
 ## Download YT PRO
 
-<a href="https://github.com/munnakumar678997/YTPro/releases/latest/download/youtube_pro_signed.apk">
+<a href="https://github.com/munnakumar678997/MunnaYTPro/releases/latest/download/YTPro.apk">
   <img src="https://img.shields.io/badge/⬇_DOWNLOAD_APK-Install_Now-red?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="50">
 </a>
 
-> **Note:** APK download hone ke baad open karein → Install karein. "Install from unknown sources" allow karein agar phone pooche.
+> **How to install:** APK download hone ke baad, file open karein → Install karein.
+> "Install from unknown sources" allow karein agar phone pooche.
 
 ---
 
