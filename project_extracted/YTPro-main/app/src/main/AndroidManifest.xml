@@ -22,7 +22,7 @@
 		android:icon="@mipmap/app_icon"
 		android:roundIcon="@mipmap/app_icon"
 		android:largeHeap="true"
-		android:usesCleartextTraffic="true"
+		android:usesCleartextTraffic="false"
 		android:theme="@style/AppTheme">
 		<activity
 			android:name=".MainActivity"
@@ -79,7 +79,7 @@
 		<service
 			android:name=".ForegroundService"
 			android:enabled="true"
-			android:exported="true"
+			android:exported="false"
 			android:foregroundServiceType="mediaPlayback"
 			/>
 

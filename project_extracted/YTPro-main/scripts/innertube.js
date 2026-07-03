@@ -1,7 +1,5 @@
 /*****YTPRO*******
-Author: Prateek Chaubey
 Version: 3.9.8
-URI: https://github.com/prateek-chaubey/YTPRO
 Last Updated On: 1 May , 2026 , 19:25 IST
 */
 

@@ -103,15 +103,27 @@ public class WebAppInterface {
 	
 	@JavascriptInterface
 	public void requestBinaryPort(String fileName) {
+		// Security fix: sanitize filename to prevent path traversal
+		final String safeFileName = sanitizeFileName(fileName);
 		activity.runOnUiThread(() -> {
 			if (activity.streamManager != null) {
-				activity.streamManager.openStreamForFile(fileName);
+				activity.streamManager.openStreamForFile(safeFileName);
 			}
 		});
 	}
 	
+	private String sanitizeFileName(String name) {
+		if (name == null) return "file";
+		// Strip path separators to prevent directory traversal
+		return name.replaceAll("[/\\\\:*?\"<>|]", "_").replaceAll("\\.\\.", "_");
+	}
+
 	@JavascriptInterface
 	public void muxVideoAudio(String videoFileName,String audioFileName,String outputFileName) {
+		// Security fix: sanitize filenames to prevent path traversal
+		videoFileName = sanitizeFileName(videoFileName);
+		audioFileName = sanitizeFileName(audioFileName);
+		outputFileName = sanitizeFileName(outputFileName);
 		java.io.File downloads = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS.concat("/YTPRO"));
 		java.io.File video  = new java.io.File(downloads, videoFileName);
 		java.io.File audio  = new java.io.File(downloads, audioFileName);
@@ -205,6 +217,12 @@ public class WebAppInterface {
 	
 	@JavascriptInterface
 	public String getAllCookies(String url) {
+		// Security fix: only allow YouTube domains to access cookies
+		if (url == null) return "";
+		String lower = url.toLowerCase();
+		if (!lower.contains("youtube.com") && !lower.contains("youtu.be") && !lower.contains("googlevideo.com")) {
+			return "";
+		}
 		return CookieManager.getInstance().getCookie(url);
 	}
 	
